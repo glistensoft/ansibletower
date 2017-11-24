@@ -3,7 +3,7 @@
   tasks:
     - name: Build download build
       get_url:
-        url: http://172.18.200.140/index.html.gz
+        url: http://172.18.200.140/builds/index.html.gz
         dest: /tmp
 
     - name: Ansible Tower deploy build
