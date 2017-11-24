@@ -9,5 +9,8 @@
     - name: Ansible Tower deploy build
       command: mv /tmp/index.html.gz /var/www/html/nginx/index.html.gz
 
+    - name: Remove old files
+      command: rm /var/www/html/nginx/index.html
+
     - name: Ansible Tower uncompress build
       shell: gunzip /var/www/html/nginx/index.html.gz
