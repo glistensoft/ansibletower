@@ -7,9 +7,7 @@
         dest: /tmp
 
     - name: Ansible Tower deploy build
-      copy:
-        src: /tmp/index.html.gz
-        dest: /var/www/html/nginx/index.html.gz
+      command: mv /tmp/index.html.gz /var/www/html/nginx/index.html.gz
 
     - name: Ansible Tower uncompress build
       shell: gunzip /var/www/html/nginx/index.html.gz
