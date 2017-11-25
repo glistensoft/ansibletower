@@ -11,6 +11,7 @@
 
     - name: Remove old files
       command: rm /var/www/html/nginx/index.html
+      ignore_errors: True
 
     - name: Ansible Tower uncompress build
       shell: gunzip /var/www/html/nginx/index.html.gz
