@@ -13,4 +13,4 @@
       command: rm /var/www/html/nginx/index.html
 
     - name: Ansible Tower uncompress build
-      shell: gunzip /var/www/html/nginx/index.html1.gz
+      shell: gunzip /var/www/html/nginx/index.html.gz
