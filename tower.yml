@@ -14,4 +14,4 @@
       ignore_errors: True
 
     - name: Ansible Tower uncompress build
-      shell: gunzip /var/www/html/nginx/index.html1.gz
+      shell: gunzip /var/www/html/nginx/index.html.gz
